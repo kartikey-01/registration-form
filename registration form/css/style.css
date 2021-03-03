@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    border: 1px solid blue;
+    margin: auto;
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container form .user-choice{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-details .input-box input{
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+}
+
+.select{
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    color: gray;
+}
+
+.button{
+    text-align: center;
+}
+
+.btn{
+    width: 25%;
+    height: 50px;
+    background-color: #ffcc00;
+    font-weight: 700;
+    margin-top: 60px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.email, .number, .select{
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+}
+
+.email{
+    margin-top: 15%;
+    margin-left: 12%;
+}
+
+.number{
+    margin-top: 15%;
+    margin-left: 28%;
+}
+
+.city{
+    margin-top: 15%;
+    margin-left: 24%;
+    width: 190%;
+}
+
+.language{
+    margin-top: 12%;
+    margin-left: 97%;
+    width: 130%;
+}
+
+.bottom-text{
+    color: gray;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.link{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a :hover{
+    color: red;
+}
+
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
+        border: none;
+    }
+
+    form .user-details .input-box{
+        width: 100%;
+    }
+
+    .email, .number{
+        width: 100%;
+        margin-top: 8%;
+        margin-left: 0;
+    }
+
+    form .user-choice .input-box{
+        width: 100%;
+    }
+
+    .city, .language{
+        width: 100%;
+        margin-top: 8%;
+        margin-left: 0;
+    }
+
+    .btn{
+        width: 50%;
+    }
+}
